@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Landing</title>
+
+  <style>
+  .wow {
+    visibility: hidden;
+  }
+  </style>
+
+  <script>
+  wow = new WOW({
+    animateClass: 'animated',
+    offset: 0
+  });
+  wow.init();
+  </script>
+  <link rel="preload" href="fonts/EuclidCircularA-Semibold-WebXL.woff2" as="font">
+  <link rel="preload" href="fonts/EuclidCircularA-Medium-WebXL.woff2" as="font">
+  <link rel="preload" href="fonts/EuclidCircularA-Regular-WebXl.woff2" as="font">
+  <link rel="preload" href="fonts/ObjectSans-Regular.woff2" as="font">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/base-css.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon@2x-1.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon@2x.png">
+  <link rel="icon" type="image/png" href="img/favicon@2x-1.png" />
+
+  <meta name="msapplication-TileColor " content="#783bff ">
+  <meta name="theme-color " content="#ffffff ">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type " content="website " />
+  <meta property="og:url " content="https://www.storytale.io" />
+  <meta property="og:title " content="Storytale" />
+  <meta property="og:description " content="High-class web illustrations under simple subscription" />
+  <meta property="og:image " content="img/Open-Graph.png " />
+
+  <!-- Twitter -->
+  <meta property="twitter:card " content="summary_large_image " />
+  <meta property="twitter:url " content="https://www.storytale.io" />
+  <meta property="twitter:title " content="Storytale" />
+  <meta property="twitter:description " content="High-class web illustrations under simple subscription" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js "></script>
+
+</head>
+
+<body class="landing-page">
+  <header class="page-header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#">
+        <svg width="146" height="40" viewBox="0 0 146 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M56.496 17.792L59.232 16.6639C58.368 14.384 55.536 13.448 53.712 13.664C50.976 14 49.416 15.9439 49.416 17.7199C49.416 19.1119 50.736 20.384 52.2 20.84C53.424 21.224 56.448 21.32 56.304 22.712C56.208 23.6 54.744 23.8879 53.784 23.672C52.824 23.4559 52.08 22.688 51.792 21.92L48.96 23.144C49.56 24.656 51.168 26.504 54.36 26.504C57.84 26.504 59.472 24.392 59.472 22.784C59.472 21.2 58.68 19.6399 56.088 19.016C53.592 18.4159 52.512 18.2959 52.512 17.408C52.512 16.784 53.448 16.4479 54.264 16.4479C54.912 16.4479 56.112 16.808 56.496 17.792Z" fill="black"/>
+          <path d="M68.7795 25.76L67.8915 23.024C67.3875 23.336 66.3555 23.5279 65.8035 22.9039C65.4675 22.5199 65.4195 22.184 65.4195 20.528V17.024H68.2515V14.2639H65.4435V10.7119H62.3955V13.472C62.3955 14 62.2275 14.2639 61.4835 14.2639H60.1875V17.024H62.2515V22.5199C62.2515 23.8879 63.0435 25.784 65.2035 26.216C66.9795 26.576 67.8435 26.12 68.7795 25.76Z" fill="black"/>
+          <path d="M68.789 20.12C68.789 23.576 71.525 26.528 75.101 26.528C78.653 26.528 81.389 23.576 81.389 20.12C81.389 16.6639 78.653 13.8559 75.101 13.8559C71.525 13.8559 68.789 16.6639 68.789 20.12ZM71.957 20.1439C71.957 18.1279 73.493 16.7599 75.125 16.7599C76.757 16.7599 78.269 18.1279 78.269 20.1439C78.269 22.3039 76.757 23.576 75.125 23.576C73.493 23.576 71.957 22.3039 71.957 20.1439Z" fill="black"/>
+          <path d="M85.9603 26.096L82.8403 26.072V14.3359H85.9603V16.0879C86.3443 15.1519 86.9203 14.576 88.0963 14.1439C88.9603 13.8319 90.4243 13.904 91.2403 14.3839L90.3763 17.24C89.4163 16.784 87.8323 16.7119 86.9203 17.7439C86.1043 18.6799 85.9603 19.3759 85.9603 22.4959V26.096Z" fill="black"/>
+          <path d="M93.4158 31.424H96.8718L104.288 14.2639H100.832L97.8798 21.584L94.6878 14.2639L91.2318 14.24L96.1518 25.5919L93.4158 31.424Z" fill="black"/>
+          <path d="M113.359 25.76L112.471 23.024C111.967 23.336 110.935 23.5279 110.383 22.9039C110.047 22.5199 109.999 22.184 109.999 20.528V17.024H112.831V14.2639H110.023V10.7119H106.975V13.472C106.975 14 106.807 14.2639 106.063 14.2639H104.767V17.024H106.831V22.5199C106.831 23.8879 107.623 25.784 109.783 26.216C111.559 26.576 112.423 26.12 113.359 25.76Z" fill="black"/>
+          <path d="M118.578 26.4799C120.306 26.4799 121.386 25.496 121.914 24.752L122.01 26.12H125.154L125.082 18.2479C125.082 16.5679 124.146 15.0319 121.962 14.216C120.306 13.592 118.29 13.832 117.066 14.528C115.362 15.488 114.714 16.784 114.546 17.768L117.354 18.368C117.642 16.832 118.842 16.184 120.354 16.568C122.01 16.9999 121.746 18.368 121.41 18.632C121.074 18.896 119.682 19.016 118.506 19.184C115.914 19.52 114.09 20.696 114.354 23.312C114.618 25.256 116.034 26.4799 118.578 26.4799ZM119.946 23.96C118.53 24.248 117.498 23.816 117.498 22.6639C117.498 21.056 119.394 21.632 121.962 21.224C122.13 22.424 121.482 23.648 119.946 23.96Z" fill="black"/>
+          <path d="M130.885 8.64795H127.549V26.1679H130.885V8.64795Z" fill="black"/>
+          <path d="M132.8 20.1439C132.8 15.8479 135.92 13.904 139.112 13.904C142.28 13.904 145.376 15.848 145.016 20.984L136.064 21.08C136.064 22.016 136.952 23.552 138.92 23.672C140.36 23.768 141.272 23.096 141.8 22.088L144.752 23C144.152 24.464 142.28 26.336 139.16 26.336C135.32 26.336 132.8 23.5759 132.8 20.1439ZM136.064 18.7039L141.704 18.68C141.704 17.552 140.504 16.3279 138.632 16.4479C137.504 16.5199 136.208 17.36 136.064 18.7039Z" fill="black"/>
+          <path d="M18.1411 0L19.8589 0C24.1471 0 27.2074 0.742605 29.8148 2.13706C32.4222 3.53152 34.4685 5.57783 35.8629 8.18523C37.2574 10.7926 38 13.8529 38 18.1411V21.8589C38 26.1471 37.2574 29.2074 35.8629 31.8148C34.4685 34.4222 32.4222 36.4685 29.8148 37.8629C27.2074 39.2574 24.1471 40 19.8589 40H18.1411C13.8529 40 10.7926 39.2574 8.18523 37.8629C5.57783 36.4685 3.53152 34.4222 2.13706 31.8148C0.742605 29.2074 0 26.1471 0 21.8589L0 18.1411C0 13.8529 0.742605 10.7926 2.13706 8.18523C3.53152 5.57783 5.57783 3.53152 8.18523 2.13706C10.7926 0.742605 13.8529 0 18.1411 0Z" fill="black"/>
+          <path d="M17.8105 12.9402C18.2532 9.61289 18.4745 7.94923 19 7.94923C19.5255 7.94923 19.7468 9.61288 20.1895 12.9402L20.7163 16.8997C20.7709 17.3096 20.7982 17.5146 20.9294 17.6549C21.0607 17.7952 21.2634 17.8361 21.6688 17.9178L26.1634 18.8237C28.4299 19.2805 29.5632 19.5089 29.5632 20C29.5632 20.4911 28.4299 20.7195 26.1634 21.1763L21.6688 22.0822C21.2634 22.1639 21.0607 22.2048 20.9294 22.3451C20.7982 22.4854 20.7709 22.6904 20.7163 23.1003L20.1895 27.0598C19.7468 30.3871 19.5255 32.0508 19 32.0508C18.4745 32.0508 18.2532 30.3871 17.8105 27.0598L17.2837 23.1003C17.2291 22.6904 17.2018 22.4854 17.0706 22.3451C16.9393 22.2048 16.7366 22.1639 16.3312 22.0822L11.8366 21.1763C9.57008 20.7195 8.43683 20.4911 8.43683 20C8.43683 19.5089 9.57008 19.2805 11.8366 18.8237L16.3312 17.9178C16.7366 17.8361 16.9393 17.7952 17.0706 17.6549C17.2018 17.5146 17.2291 17.3096 17.2837 16.8997L17.8105 12.9402Z" fill="white"/>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav header-tools ml-auto">
+          <li class="nav-item dropdown dropdown-browse">
+            <a class="nav-link" href="#">Browse<span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu browse-content animate slideIn">
+              <div class="browse-content-inner">
+                <ul>
+                  <li>
+                    <a href="#" class="nav-link">3D</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Flat</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Hand drawn</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Noise</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Outline</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link bordered">Freebies</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link bordered">Order customs</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">Plugins <span class="badge green">New</span></a>
+          </li>
+          <li class="nav-item dropdown dropdown-update"> <a class="d-inline-block align-middle update-link nav-link" href="/updates/" title="Updates">Updates</a>
+            <div class="dropdown-menu update-content animate slideIn">
+              <div class="update-content-inner">
+                <a href="https://storytale.io/packages/blotter/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>New Blotter Illustrations</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Blotter Illustrations open the door to a crazy world of unusual and freaky characters. You’ll like them if you’re searching for contrast, uniqueness, and want to spice your design up.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">15 Sep 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://storytale.io/packages/tattoo/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>New Tattoo Illustrations</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Tattoo Illustrations were created in a special old times mood. Do you feel it? 15 outline pieces in a bright color scheme are shining like diamonds.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">15 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">11 Sep 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/meetup/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>New Meetup Illustrations</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>New stories about team and work. Explore the pack to recharge your energy batteries and complete all projects.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">08 Sep 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/come-together/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>Hey! Come together</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Bright color palette and hand-drawn textures as a successful collaboration. Make your design project even more stylish and describe idea without words.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">04 Sep 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/90s/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>New ’90s illustrations!</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>30 contrast illustrations to make your website really amazing. That’s not empty words. Take them and get your ticket to nostalgia.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">30 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">01 Sep 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/riley/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>Meet Riley Illustrations</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Hand-drawn style, one character, lots of stories about daily life and human emotions. Explore these illustrations and choose scenes that perfectly fits your awesome idea.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">28 Aug 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/ux-ui/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>UX/UI Illustrations</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Bright episodes from the IT world created especially for developers and designers. Package includes 20 illustrations: 10 colorful and 10 black&amp;white ones with a thick outline.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">25 Aug 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/back-to-school/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>Back to school</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Sharp and crispy illustrations about the study, science, creativity, and success. Add them to your presentation, website, or application to make it catchy and smart.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">20 Aug 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/denmark/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>Let’s try Denmark</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Bright and fun, and also a little bit strange and funky. They were created not for everyone, but for those who like to surprise his audience. Do you do? So let’s try Denmark.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">14 Aug 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/snap/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>Introducing Snap Illustrations</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Turn usual icons on your website into bright stylish illustrations. Try them in catchy colors with many classy details.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">25 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">07 Aug 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/superscene/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge blue">Update</span>
+                      <div> <strong>New Superscene 3D characters</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>Meet Updated Superscene with new bright characters. 4 humans and 4 robots are added. They all have their personal mood, emotions, and stories of their lives.&nbsp;</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">66 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">04 Aug 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a> <a href="https://storytale.io/packages/vacation/" class="event-wrapper d-block">
+                  <div class="event-inner">
+                    <div class="event-top">
+                      <span class="badge green">New</span>
+                      <div> <strong>Let’s go on a trip!</strong></div>
+                    </div>
+                    <div class="event-miidle">
+                      <p></p>
+                      <p>New Vacation Illustrations are about traveling, journey, and happy weekends. 15 bright outline stories to draw attention to your next project.</p>
+                      <p></p>
+                    </div>
+                    <div class="event-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div class="col-auto px-0"><span class="count-product">20 illustrations</span></div>
+                        <div class="col-auto px-0"><span class="update-date">31 Jul 2020</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="full_update"> <a href="/updates/" class="d-block text-center">Explore all updates</a></div>
+            </div>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Prices</a>
+          </li>
+          <li class="nav-item nav-item-auth">
+            <a class="nav-link colored blue" href="#">Sign Up</a>
+          </li>
+          <li class="nav-item nav-item-auth">
+            <a class="nav-link" href="#">Sign In</a>
+          </li>
+          <li class="nav-item nav-item nav-item-authorized">
+            <a class="nav-link outline blue" href="#">Get full access</a>
+          </li>
+          <li class="nav-item user-profile dropdown dropdown-user nav-item nav-item-authorized">
+            <a class="nav-link " href="#"><img src="img/user.png" class="avatar" width="38" height="38" alt=""></a>
+            <div class="dropdown-menu logged-author-content animate d-none slideIn">
+              <div class="browse-content-inner">
+                <ul>
+                  <li>
+                    <a href="#" class="nav-link">Likes</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Downloads</a>
+                  </li>
+                </ul>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link">Account</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Dashboard</a>
+                  </li>
+                </ul>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link red">Logout</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="dropdown-menu logged-pro-author-content d-none animate slideIn slideIn">
+              <div class="browse-content-inner">
+                <div class="downloads-count">
+                  <div class="total">30</div>
+                  <div class="description">downloads <br> remaining today</div>
+                </div>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link">Likes</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Downloads</a>
+                  </li>
+                </ul>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link">Account</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Dashboard</a>
+                  </li>
+                </ul>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link red">Logout</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="dropdown-menu logged-pro-content animate d-none slideIn">
+              <div class="browse-content-inner">
+                <div class="downloads-count">
+                  <div class="total">30</div>
+                  <div class="description">downloads <br> remaining today</div>
+                </div>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link">Likes</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Downloads</a>
+                  </li>
+                </ul>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link">Account</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Become an author</a>
+                  </li>
+                </ul>
+                <ul class="bordered-list">
+                  <li>
+                    <a href="#" class="nav-link red">Logout</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <div class="container-custom">
+      <div class="row">
+        <div class="col-12">
+          <div class="position-relative">
+            <img src="img/elements/20.svg" alt="" class="position-absolute first">
+            <img src="img/elements/21.svg" alt="" class="position-absolute second">
+              <img src="img/elements/17.svg" alt="" class="position-absolute third">
+
+            <img src="img/elements/19.svg" alt="" class="position-absolute fifth">
+            <img src="img/elements/18.svg" alt="" class="position-absolute sixth">
+
+          </div>
+        </div>
+        <div class="col-lg-9 mx-auto">
+          <h1 class="title">Earn more doing what you love, become an Storytale Author</h1>
+          <p class="text-center description">Storytale is a curated marketplace. We welcome authors who provide top quality and useful creative resources for fellow designers.</p>
+          <div class="position-relative ready-to">
+                <a href="#" class="large-link purple mx-auto">Become an author</a>
+                <svg class="position-absolute noice-1" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.60488 8.47578C7.20961 5.80537 4.81434 3.13495 2.41906 0.464533C1.16154 -0.931364 -0.844494 1.13213 0.383084 2.52803C2.77836 5.19844 5.17363 7.86886 7.56891 10.5393C8.82642 11.9352 10.8624 9.84133 9.60488 8.47578Z" fill="#FF98E1"></path>
+                </svg>
+                <svg class="position-absolute noice-2" width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.64145 6.61685C5.84796 4.5572 4.05447 2.49756 2.26099 0.437908C1.11203 -0.877981 -0.793543 1.06724 0.35541 2.38313C2.1489 4.44278 3.94239 6.50244 5.73588 8.56209C6.91285 9.87798 8.79041 7.93274 7.64145 6.61685Z" fill="#FF98E1"></path>
+                </svg>
+                <svg class="position-absolute noice-3" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 15C3.375 15 0 11.625 0 7.5C0 3.375 3.375 0 7.5 0C11.625 0 15 3.375 15 7.5C15 11.625 11.625 15 7.5 15ZM7.5 2.99999C5.03125 2.99999 3 5.03125 3 7.5C3 9.96875 5.03125 12 7.5 12C9.96875 12 12 9.96875 12 7.5C12 5.03125 9.96875 2.99999 7.5 2.99999Z" fill="#F76567"></path>
+                </svg>
+                <svg class="position-absolute noice-4" width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3962 30C12.9263 30 12.5087 29.7432 12.2737 29.3323C10.6814 26.302 5.53895 18.3412 1.12741 17.8533C0.52702 17.8019 0.0832581 17.314 0.00494661 16.749C-0.047261 16.1584 0.318199 15.6191 0.892483 15.465C7.67947 13.4106 10.6292 1.08414 10.6553 0.955739C10.7858 0.442136 11.2296 0.0569304 11.7778 0.00557013C12.2999 -0.0457902 12.8219 0.262378 13.0308 0.750301C15.8239 7.2217 20.0266 14.4378 21.9583 14.7717C22.4281 14.8487 22.7936 15.1826 22.9502 15.6191C23.0807 16.0557 22.9502 16.5436 22.6109 16.8774C20.4965 18.8805 14.9363 24.9667 14.6492 28.8701C14.597 29.4093 14.2054 29.8716 13.6572 30C13.5789 30 13.4745 30 13.3962 30ZM4.4426 16.4409C8.04492 18.4182 11.1774 22.7325 12.9785 25.583C14.5448 21.9364 17.8861 18.1614 19.6872 16.2868C16.8941 14.104 13.9444 8.63411 12.1171 4.78209C10.8902 8.27459 8.46258 13.6674 4.4426 16.4409Z" fill="#FFDF57"></path>
+                </svg>
+                <svg class="position-absolute noice-5" width="37" height="20" viewBox="0 0 37 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.9717 18.9051C34.9613 19.0346 34.9324 19.1626 34.868 19.2691C34.6288 19.6967 34.076 19.8571 33.6484 19.6179L1.99173 1.87992C1.56414 1.64073 1.40232 1.10643 1.64299 0.660349C1.88217 0.232765 2.43498 0.0724342 2.86256 0.311617L34.5193 18.0496C34.8218 18.2229 34.9985 18.5722 34.9717 18.9051Z" fill="#F76567"></path>
+                </svg>
+                <svg class="position-absolute noice-6" width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.68693 20.9747C6.15248 20.9747 5.69092 20.595 5.56946 20.0635C4.30623 15.1025 2.21702 11.0274 1.39106 11.2299C0.759449 11.3565 0.152132 10.9515 0.0306675 10.2934C-0.11509 9.66064 0.273596 9.00255 0.880919 8.85069C2.92152 8.31915 4.64632 3.58599 5.22935 1.18144C5.25365 0.903015 5.35081 0.599276 5.64232 0.320854C6.03101 -0.0335006 6.56547 -0.109428 7.02703 0.168994C7.44001 0.422105 7.65863 0.877692 7.58575 1.3586C8.04732 3.13038 11.7156 8.95193 12.9788 9.1291C13.5618 9.20504 14.0234 9.73657 13.9991 10.3694C13.9748 11.0021 13.5132 11.5084 12.9059 11.559C11.9585 11.6349 8.41171 15.5834 7.85297 19.9369C7.78009 20.5191 7.31852 20.9494 6.75979 21C6.7355 20.9747 6.71122 20.9747 6.68693 20.9747ZM3.60171 9.91375C4.88924 11.2299 5.90955 13.5079 6.68693 15.6594C7.65864 13.4573 9.04333 11.4577 10.4766 10.2428C9.01904 8.82538 7.58576 6.57269 6.58975 4.72499C5.93384 6.49676 4.96211 8.54696 3.60171 9.91375Z" fill="#FFDF57"></path>
+                </svg>
+                <svg class="position-absolute noice-7" width="27" height="40" viewBox="0 0 27 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.0595 40C13.5205 40 13.0519 39.5955 12.9582 39.0482C12.9348 38.8816 10.0293 22.3443 1.5942 21.7257C1.40675 21.7257 1.19587 21.7257 1.00843 21.7019C0.422652 21.6305 -0.0225471 21.107 0.000883833 20.5121C0.0243148 19.8935 0.516376 19.4176 1.12558 19.4176C1.2896 19.4176 1.45361 19.4176 1.61763 19.4414C2.53143 19.3938 3.63269 18.8465 4.7808 17.8709C9.13896 14.1828 13.1222 5.66426 13.4971 1.04809C13.544 0.477013 13.9892 0.0487099 14.5515 0.00112052C15.0904 -0.0226742 15.6059 0.334243 15.723 0.905316C16.7774 5.75943 20.6436 18.442 25.9624 18.8703C26.4544 18.9179 26.8527 19.2748 26.9699 19.7507C27.0871 20.2266 26.8528 20.7501 26.431 20.988C26.3373 21.0594 16.2385 27.1509 15.1842 38.953C15.1373 39.5241 14.6686 39.9762 14.1063 40C14.0829 40 14.0829 40 14.0595 40ZM5.20254 20.4408C9.8653 22.844 12.5599 29.1496 13.9423 33.6706C16.0511 26.8653 20.667 22.4633 23.3381 20.3932C19.0268 18.0375 16.1917 10.7801 14.6921 5.9022C13.0753 10.8039 9.81845 16.6098 6.21009 19.6555C5.88205 19.9411 5.53058 20.2028 5.20254 20.4408Z" fill="#FFDF57"></path>
+                </svg>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="overflow-hidden">
+    <section class="how-it-works">
+      <div class="container-custom">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="text-center">How it works</h2>
+            <p class="text-center description">Create a personal account and get hundreds of stylish illustrations for your web projects</p>
+          </div>
+          <div class="col-xl-9 mx-auto">
+            <div class="row item">
+              <div class="col-xl-6 step-image-container">
+                <img src="img/landing/01.png" srcset="img/landing/01@2x.png 2x" width="410" height="335" alt="">
+              </div>
+              <div class="col-xl-6 step">
+                <div class="digit yellow">01</div>
+                <div class="title">Become an author</div>
+                <p class="text-center description">Big problem for designers that don’t have enough time or even skills consists in illustrating their projects. We solve this problem.</p>
+              </div>
+            </div>
+            <div class="row item">
+              <div class="col-xl-6 step">
+                <div class="digit blue">02</div>
+                <div class="title">Upload your pack</div>
+                <p class="text-center description">Storytale is needed by designers, startupers, entrepreneurs, and big corporates. All those who want to enrich their projects.</p>
+              </div>
+              <div class="col-xl-6 step-image-container">
+                  <img src="img/landing/02.png" srcset="img/landing/02@2x.png 2x" width="445" height="340" alt="">
+              </div>
+            </div>
+            <div class="row item">
+              <div class="col-xl-6 step-image-container">
+                  <img src="img/landing/03.png" srcset="img/landing/03@2x.png 2x" width="375" height="470" alt="">
+              </div>
+              <div class="col-xl-6 step">
+                <div class="digit purple">03</div>
+                <div class="title">Earn uploads</div>
+                <p class="text-center description">Illustrations downloaded once by subscription become yours forever. You don't have to pay for subscription each month to use the same.</p>
+              </div>
+            </div>
+            <div class="row item">
+              <div class="col-xl-6 step">
+                <div class="digit green">04</div>
+                <div class="title">Get income</div>
+                <p class="text-center description">All illustrations can be used for websites, apps, and presentations. Designers can include our illustrations in their work and provide it.</p>
+              </div>
+              <div class="col-xl-6 step-image-container">
+                <img src="img/landing/04.png" srcset="img/landing/04@2x.png 2x" width="420" height="350" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how-to">
+      <div class="container-custom">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="text-center">How to become an author</h2>
+            <p class="text-center description">Create a personal account and get hundreds of stylish illustrations for your web projects.</p>
+          </div>
+          <div class="col-xl-9 mx-auto content-column">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 position-relative">
+                <img class="position-absolute first-image" src="img/landing/05.png" srcset="img/landing/05@2x.png 2x" alt="">
+              </div>
+              <div class="col-xl-6 col-lg-6 right-column">
+                <div class="features-wrapper">
+                  <div class="simple-feature">
+                    <div class="left">
+                      <img src="img/landing/07.png" alt="">
+                    </div>
+                    <div class="right">
+                      <div class="title">Create an account</div>
+                      <div class="text">Create an account by our Sign up form, or Sign in if you already have an account</div>
+                    </div>
+                  </div>
+                  <div class="simple-feature">
+                    <div class="left">
+                      <img src="img/landing/08.png" alt="">
+                    </div>
+                    <div class="right">
+                      <div class="title">Upload your first pack</div>
+                      <div class="text">Send .zip archive with illustrations in .png and .svg formats.</div>
+                    </div>
+                  </div>
+                  <div class="simple-feature">
+                    <div class="left">
+                      <img src="img/landing/09.png" alt="">
+                    </div>
+                    <div class="right">
+                      <div class="title">Wait for approval</div>
+                      <div class="text">The pack will be send for verification and uploaded to the site after approval.</div>
+                    </div>
+                  </div>
+                  <div class="simple-feature">
+                    <div class="left">
+                      <img src="img/landing/10.png" alt="">
+                    </div>
+                    <div class="right">
+                      <div class="title">Become an author</div>
+                      <div class="text">Earn more doing what you love because you become an Storytale Author.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how-to">
+      <div class="container-custom">
+        <div class="row">
+          <div class="col-xl-10 mx-auto">
+            <h2 class="text-center">Get income doing what you love</h2>
+            <p class="text-center description">Create a personal account and get hundreds of stylish illustrations for your web projects</p>
+          </div>
+          <div class="col-xl-10 mx-auto content-column">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 left-column">
+                <div class="features-wrapper">
+                  <div class="simple-feature">
+                    <div class="left">
+                      <img src="img/landing/11.png" alt="">
+                    </div>
+                    <div class="right">
+                      <div class="title">Get access to dashboard</div>
+                      <div class="text">Send .zip archive with illustrations in .png and .svg formats</div>
+                    </div>
+                  </div>
+                  <div class="simple-feature">
+                    <div class="left">
+                      <img src="img/landing/12.png" alt="">
+                    </div>
+                    <div class="right">
+                      <div class="title">Manage your products</div>
+                      <div class="text">The pack will be send for verification and uploaded to the site after approval</div>
+                    </div>
+                  </div>
+                  <div class="simple-feature">
+                    <div class="left">
+                      <img src="img/landing/13.png" alt="">
+                    </div>
+                    <div class="right">
+                      <div class="title">Get payouts every month</div>
+                      <div class="text">Earn more doing what you love because you become an Storytale Author</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 position-relative">
+                <img class="position-absolute second-image" src="img/landing/06.png" srcset="img/landing/06@2x.png 2x" width="587" height="587" alt="">
+                <img class="position-absolute custom-image" src="img/landing/06-custom.png" srcset="img/landing/06-custom@2x.png 2x" width="587" height="587" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container-custom">
+        <div class="row">
+          <div class="col-xl-10 mx-auto">
+            <div class="wrapper">
+              <h1 class="text-center">Ready to start?</h1>
+              <p class="description text-center">Storytale is a curated marketplace. We welcome authors who provide top quality and useful creative resources for fellow designers.</p>
+              <div class="position-relative ready-to">
+                  <a href="#" class="large-link purple mx-auto">Become an author</a>
+                  <svg class="position-absolute noice-1" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.60488 8.47578C7.20961 5.80537 4.81434 3.13495 2.41906 0.464533C1.16154 -0.931364 -0.844494 1.13213 0.383084 2.52803C2.77836 5.19844 5.17363 7.86886 7.56891 10.5393C8.82642 11.9352 10.8624 9.84133 9.60488 8.47578Z" fill="#FF98E1"></path>
+                  </svg>
+                  <svg class="position-absolute noice-2" width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.64145 6.61685C5.84796 4.5572 4.05447 2.49756 2.26099 0.437908C1.11203 -0.877981 -0.793543 1.06724 0.35541 2.38313C2.1489 4.44278 3.94239 6.50244 5.73588 8.56209C6.91285 9.87798 8.79041 7.93274 7.64145 6.61685Z" fill="#FF98E1"></path>
+                  </svg>
+                  <svg class="position-absolute noice-3" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 15C3.375 15 0 11.625 0 7.5C0 3.375 3.375 0 7.5 0C11.625 0 15 3.375 15 7.5C15 11.625 11.625 15 7.5 15ZM7.5 2.99999C5.03125 2.99999 3 5.03125 3 7.5C3 9.96875 5.03125 12 7.5 12C9.96875 12 12 9.96875 12 7.5C12 5.03125 9.96875 2.99999 7.5 2.99999Z" fill="#F76567"></path>
+                  </svg>
+                  <svg class="position-absolute noice-6" width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.68693 20.9747C6.15248 20.9747 5.69092 20.595 5.56946 20.0635C4.30623 15.1025 2.21702 11.0274 1.39106 11.2299C0.759449 11.3565 0.152132 10.9515 0.0306675 10.2934C-0.11509 9.66064 0.273596 9.00255 0.880919 8.85069C2.92152 8.31915 4.64632 3.58599 5.22935 1.18144C5.25365 0.903015 5.35081 0.599276 5.64232 0.320854C6.03101 -0.0335006 6.56547 -0.109428 7.02703 0.168994C7.44001 0.422105 7.65863 0.877692 7.58575 1.3586C8.04732 3.13038 11.7156 8.95193 12.9788 9.1291C13.5618 9.20504 14.0234 9.73657 13.9991 10.3694C13.9748 11.0021 13.5132 11.5084 12.9059 11.559C11.9585 11.6349 8.41171 15.5834 7.85297 19.9369C7.78009 20.5191 7.31852 20.9494 6.75979 21C6.7355 20.9747 6.71122 20.9747 6.68693 20.9747ZM3.60171 9.91375C4.88924 11.2299 5.90955 13.5079 6.68693 15.6594C7.65864 13.4573 9.04333 11.4577 10.4766 10.2428C9.01904 8.82538 7.58576 6.57269 6.58975 4.72499C5.93384 6.49676 4.96211 8.54696 3.60171 9.91375Z" fill="#FFDF57"></path>
+                  </svg>
+                  <svg class="position-absolute noice-7" width="27" height="40" viewBox="0 0 27 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.0595 40C13.5205 40 13.0519 39.5955 12.9582 39.0482C12.9348 38.8816 10.0293 22.3443 1.5942 21.7257C1.40675 21.7257 1.19587 21.7257 1.00843 21.7019C0.422652 21.6305 -0.0225471 21.107 0.000883833 20.5121C0.0243148 19.8935 0.516376 19.4176 1.12558 19.4176C1.2896 19.4176 1.45361 19.4176 1.61763 19.4414C2.53143 19.3938 3.63269 18.8465 4.7808 17.8709C9.13896 14.1828 13.1222 5.66426 13.4971 1.04809C13.544 0.477013 13.9892 0.0487099 14.5515 0.00112052C15.0904 -0.0226742 15.6059 0.334243 15.723 0.905316C16.7774 5.75943 20.6436 18.442 25.9624 18.8703C26.4544 18.9179 26.8527 19.2748 26.9699 19.7507C27.0871 20.2266 26.8528 20.7501 26.431 20.988C26.3373 21.0594 16.2385 27.1509 15.1842 38.953C15.1373 39.5241 14.6686 39.9762 14.1063 40C14.0829 40 14.0829 40 14.0595 40ZM5.20254 20.4408C9.8653 22.844 12.5599 29.1496 13.9423 33.6706C16.0511 26.8653 20.667 22.4633 23.3381 20.3932C19.0268 18.0375 16.1917 10.7801 14.6921 5.9022C13.0753 10.8039 9.81845 16.6098 6.21009 19.6555C5.88205 19.9411 5.53058 20.2028 5.20254 20.4408Z" fill="#FFDF57"></path>
+                  </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer bordered">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="wrapper">
+            <div class="first">
+              <a>
+                <svg width="146" height="40" viewBox="0 0 146 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M56.496 17.792L59.232 16.6639C58.368 14.384 55.536 13.448 53.712 13.664C50.976 14 49.416 15.9439 49.416 17.7199C49.416 19.1119 50.736 20.384 52.2 20.84C53.424 21.224 56.448 21.32 56.304 22.712C56.208 23.6 54.744 23.8879 53.784 23.672C52.824 23.4559 52.08 22.688 51.792 21.92L48.96 23.144C49.56 24.656 51.168 26.504 54.36 26.504C57.84 26.504 59.472 24.392 59.472 22.784C59.472 21.2 58.68 19.6399 56.088 19.016C53.592 18.4159 52.512 18.2959 52.512 17.408C52.512 16.784 53.448 16.4479 54.264 16.4479C54.912 16.4479 56.112 16.808 56.496 17.792Z" fill="black"/>
+                  <path d="M68.7795 25.76L67.8915 23.024C67.3875 23.336 66.3555 23.5279 65.8035 22.9039C65.4675 22.5199 65.4195 22.184 65.4195 20.528V17.024H68.2515V14.2639H65.4435V10.7119H62.3955V13.472C62.3955 14 62.2275 14.2639 61.4835 14.2639H60.1875V17.024H62.2515V22.5199C62.2515 23.8879 63.0435 25.784 65.2035 26.216C66.9795 26.576 67.8435 26.12 68.7795 25.76Z" fill="black"/>
+                  <path d="M68.789 20.12C68.789 23.576 71.525 26.528 75.101 26.528C78.653 26.528 81.389 23.576 81.389 20.12C81.389 16.6639 78.653 13.8559 75.101 13.8559C71.525 13.8559 68.789 16.6639 68.789 20.12ZM71.957 20.1439C71.957 18.1279 73.493 16.7599 75.125 16.7599C76.757 16.7599 78.269 18.1279 78.269 20.1439C78.269 22.3039 76.757 23.576 75.125 23.576C73.493 23.576 71.957 22.3039 71.957 20.1439Z" fill="black"/>
+                  <path d="M85.9603 26.096L82.8403 26.072V14.3359H85.9603V16.0879C86.3443 15.1519 86.9203 14.576 88.0963 14.1439C88.9603 13.8319 90.4243 13.904 91.2403 14.3839L90.3763 17.24C89.4163 16.784 87.8323 16.7119 86.9203 17.7439C86.1043 18.6799 85.9603 19.3759 85.9603 22.4959V26.096Z" fill="black"/>
+                  <path d="M93.4158 31.424H96.8718L104.288 14.2639H100.832L97.8798 21.584L94.6878 14.2639L91.2318 14.24L96.1518 25.5919L93.4158 31.424Z" fill="black"/>
+                  <path d="M113.359 25.76L112.471 23.024C111.967 23.336 110.935 23.5279 110.383 22.9039C110.047 22.5199 109.999 22.184 109.999 20.528V17.024H112.831V14.2639H110.023V10.7119H106.975V13.472C106.975 14 106.807 14.2639 106.063 14.2639H104.767V17.024H106.831V22.5199C106.831 23.8879 107.623 25.784 109.783 26.216C111.559 26.576 112.423 26.12 113.359 25.76Z" fill="black"/>
+                  <path d="M118.578 26.4799C120.306 26.4799 121.386 25.496 121.914 24.752L122.01 26.12H125.154L125.082 18.2479C125.082 16.5679 124.146 15.0319 121.962 14.216C120.306 13.592 118.29 13.832 117.066 14.528C115.362 15.488 114.714 16.784 114.546 17.768L117.354 18.368C117.642 16.832 118.842 16.184 120.354 16.568C122.01 16.9999 121.746 18.368 121.41 18.632C121.074 18.896 119.682 19.016 118.506 19.184C115.914 19.52 114.09 20.696 114.354 23.312C114.618 25.256 116.034 26.4799 118.578 26.4799ZM119.946 23.96C118.53 24.248 117.498 23.816 117.498 22.6639C117.498 21.056 119.394 21.632 121.962 21.224C122.13 22.424 121.482 23.648 119.946 23.96Z" fill="black"/>
+                  <path d="M130.885 8.64795H127.549V26.1679H130.885V8.64795Z" fill="black"/>
+                  <path d="M132.8 20.1439C132.8 15.8479 135.92 13.904 139.112 13.904C142.28 13.904 145.376 15.848 145.016 20.984L136.064 21.08C136.064 22.016 136.952 23.552 138.92 23.672C140.36 23.768 141.272 23.096 141.8 22.088L144.752 23C144.152 24.464 142.28 26.336 139.16 26.336C135.32 26.336 132.8 23.5759 132.8 20.1439ZM136.064 18.7039L141.704 18.68C141.704 17.552 140.504 16.3279 138.632 16.4479C137.504 16.5199 136.208 17.36 136.064 18.7039Z" fill="black"/>
+                  <path d="M18.1411 0L19.8589 0C24.1471 0 27.2074 0.742605 29.8148 2.13706C32.4222 3.53152 34.4685 5.57783 35.8629 8.18523C37.2574 10.7926 38 13.8529 38 18.1411V21.8589C38 26.1471 37.2574 29.2074 35.8629 31.8148C34.4685 34.4222 32.4222 36.4685 29.8148 37.8629C27.2074 39.2574 24.1471 40 19.8589 40H18.1411C13.8529 40 10.7926 39.2574 8.18523 37.8629C5.57783 36.4685 3.53152 34.4222 2.13706 31.8148C0.742605 29.2074 0 26.1471 0 21.8589L0 18.1411C0 13.8529 0.742605 10.7926 2.13706 8.18523C3.53152 5.57783 5.57783 3.53152 8.18523 2.13706C10.7926 0.742605 13.8529 0 18.1411 0Z" fill="black"/>
+                  <path d="M17.8105 12.9402C18.2532 9.61289 18.4745 7.94923 19 7.94923C19.5255 7.94923 19.7468 9.61288 20.1895 12.9402L20.7163 16.8997C20.7709 17.3096 20.7982 17.5146 20.9294 17.6549C21.0607 17.7952 21.2634 17.8361 21.6688 17.9178L26.1634 18.8237C28.4299 19.2805 29.5632 19.5089 29.5632 20C29.5632 20.4911 28.4299 20.7195 26.1634 21.1763L21.6688 22.0822C21.2634 22.1639 21.0607 22.2048 20.9294 22.3451C20.7982 22.4854 20.7709 22.6904 20.7163 23.1003L20.1895 27.0598C19.7468 30.3871 19.5255 32.0508 19 32.0508C18.4745 32.0508 18.2532 30.3871 17.8105 27.0598L17.2837 23.1003C17.2291 22.6904 17.2018 22.4854 17.0706 22.3451C16.9393 22.2048 16.7366 22.1639 16.3312 22.0822L11.8366 21.1763C9.57008 20.7195 8.43683 20.4911 8.43683 20C8.43683 19.5089 9.57008 19.2805 11.8366 18.8237L16.3312 17.9178C16.7366 17.8361 16.9393 17.7952 17.0706 17.6549C17.2018 17.5146 17.2291 17.3096 17.2837 16.8997L17.8105 12.9402Z" fill="white"/>
+                </svg>
+              </a>
+              <p class="footer-text">564 High-quality illustrations to bring life into you projects</p>
+            </div>
+            <div class="second">
+              <p class="header">Explore</p>
+              <ul class="list">
+                <li>
+                  <a href="#" class="link">Catalog</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Freebies</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Updates</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Showcase</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Prices</a>
+                </li>
+              </ul>
+            </div>
+            <div class="third">
+              <p class="header">Legals</p>
+              <ul class="list">
+                <li>
+                  <a href="#" class="link">Privacy</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Licenses</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Terms</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Refunds</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Cookies</a>
+                </li>
+              </ul>
+            </div>
+            <div class="fourth">
+              <p class="header">Company</p>
+              <ul class="list">
+                <li>
+                  <a href="#" class="link">Order customs</a>
+                </li>
+                <li>
+                  <a href="#" class="link">About</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Contacts</a>
+                </li>
+                <li>
+                  <a href="#" class="link">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div class="fifth">
+              <div class="left">
+                <p class="bottom-text">Created on sunshine coast by Craftwork © 2020</p>
+              </div>
+              <div class="right">
+                <ul class="socials">
+                  <li>
+                    <a href="#" class="bottom-text bottom-link">Dribbble</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom-text bottom-link">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom-text bottom-link">Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  $(function() {
+    $( ".collapse-inner-link" ).click(function(evt) {
+      evt.preventDefault();
+      Array.from(evt.currentTarget.closest("ul").querySelectorAll('a')).forEach(element => element.classList.remove('active'));
+      evt.currentTarget.classList.add('active');
+    });
+  });
+</script>
+
+<script>
+$(function() {
+  $( ".nav-pills .nav-link" ).click(function(evt) {
+    evt.preventDefault();
+    Array.from(evt.currentTarget.closest("ul").querySelectorAll('a')).forEach(element => element.classList.remove('active'));
+    evt.currentTarget.classList.add('active');
+    if (evt.currentTarget.innerHTML.toLowerCase() === "packs") {
+      $(".main-content")[0].classList.add('padding-custom');
+      Array.from($(".choice-illustration" )).forEach(element => element.classList.add('d-none'));
+      Array.from($(".choice-pack" )).forEach(element => element.classList.remove('d-none'));
+    }
+    else if (evt.currentTarget.innerHTML.toLowerCase() === "illustrations") {
+      $(".main-content")[0].classList.remove('padding-custom');
+      Array.from($(".choice-pack" )).forEach(element => element.classList.add('d-none'));
+      Array.from($(".choice-illustration" )).forEach(element => element.classList.remove('d-none'));
+    }
+  });
+});
+</script>
+
+<!--Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+
+
+<script>
+wow = new WOW({
+  animateClass: 'animated',
+  offset: 0
+});
+wow.init();
+</script>
+
+</body>
+
+</html>
