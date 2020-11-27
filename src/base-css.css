@@ -707,6 +707,7 @@ p {
   color: #000000;
   border-radius: 5px;
   border: 1px solid transparent;
+  margin-right: 3.5px;
 }
 .badge.green {
   background: #25EA5C;
@@ -2373,6 +2374,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .collapse-wrapper .collapse-btn {
@@ -5183,6 +5185,20 @@ p {
     -webkit-animation-duration: .3s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0 !important;
+  animation-duration: .4s;
+  transition: all .4s;
+}
+
+.collapse-element {
+  display: block !important;
+  animation-duration: .2s;
+  transition: all .2s;
 }
 
 @keyframes slideIn {

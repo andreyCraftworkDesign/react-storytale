@@ -10,12 +10,12 @@ class Footer extends Component {
   render() {
 
     return (
-      <footer class="site-footer">
-        <div class="container-custom">
-          <div class="row">
-            <div class="col">
-              <div class="wrapper">
-                <div class="first">
+      <footer className="site-footer">
+        <div className="container-custom">
+          <div className="row">
+            <div className="col">
+              <div className="wrapper">
+                <div className="first">
                   <a>
                     <svg width="146" height="40" viewBox="0 0 146 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M56.496 17.792L59.232 16.6639C58.368 14.384 55.536 13.448 53.712 13.664C50.976 14 49.416 15.9439 49.416 17.7199C49.416 19.1119 50.736 20.384 52.2 20.84C53.424 21.224 56.448 21.32 56.304 22.712C56.208 23.6 54.744 23.8879 53.784 23.672C52.824 23.4559 52.08 22.688 51.792 21.92L48.96 23.144C49.56 24.656 51.168 26.504 54.36 26.504C57.84 26.504 59.472 24.392 59.472 22.784C59.472 21.2 58.68 19.6399 56.088 19.016C53.592 18.4159 52.512 18.2959 52.512 17.408C52.512 16.784 53.448 16.4479 54.264 16.4479C54.912 16.4479 56.112 16.808 56.496 17.792Z" fill="black"/>
@@ -31,79 +31,79 @@ class Footer extends Component {
                       <path d="M17.8105 12.9402C18.2532 9.61289 18.4745 7.94923 19 7.94923C19.5255 7.94923 19.7468 9.61288 20.1895 12.9402L20.7163 16.8997C20.7709 17.3096 20.7982 17.5146 20.9294 17.6549C21.0607 17.7952 21.2634 17.8361 21.6688 17.9178L26.1634 18.8237C28.4299 19.2805 29.5632 19.5089 29.5632 20C29.5632 20.4911 28.4299 20.7195 26.1634 21.1763L21.6688 22.0822C21.2634 22.1639 21.0607 22.2048 20.9294 22.3451C20.7982 22.4854 20.7709 22.6904 20.7163 23.1003L20.1895 27.0598C19.7468 30.3871 19.5255 32.0508 19 32.0508C18.4745 32.0508 18.2532 30.3871 17.8105 27.0598L17.2837 23.1003C17.2291 22.6904 17.2018 22.4854 17.0706 22.3451C16.9393 22.2048 16.7366 22.1639 16.3312 22.0822L11.8366 21.1763C9.57008 20.7195 8.43683 20.4911 8.43683 20C8.43683 19.5089 9.57008 19.2805 11.8366 18.8237L16.3312 17.9178C16.7366 17.8361 16.9393 17.7952 17.0706 17.6549C17.2018 17.5146 17.2291 17.3096 17.2837 16.8997L17.8105 12.9402Z" fill="white"/>
                     </svg>
                   </a>
-                  <p class="footer-text">564 High-quality illustrations to bring life into you projects</p>
+                  <p className="footer-text">564 High-quality illustrations to bring life into you projects</p>
                 </div>
-                <div class="second">
-                  <p class="header">Explore</p>
-                  <ul class="list">
+                <div className="second">
+                  <p className="header">Explore</p>
+                  <ul className="list">
                     <li>
-                      <a href="#" class="link">Catalog</a>
+                      <a href="#" className="link">Catalog</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Freebies</a>
+                      <a href="#" className="link">Freebies</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Updates</a>
+                      <a href="#" className="link">Updates</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Showcase</a>
+                      <a href="#" className="link">Showcase</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Prices</a>
+                      <a href="#" className="link">Prices</a>
                     </li>
                   </ul>
                 </div>
-                <div class="third">
-                  <p class="header">Legals</p>
-                  <ul class="list">
+                <div className="third">
+                  <p className="header">Legals</p>
+                  <ul className="list">
                     <li>
-                      <a href="#" class="link">Privacy</a>
+                      <a href="#" className="link">Privacy</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Licenses</a>
+                      <a href="#" className="link">Licenses</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Terms</a>
+                      <a href="#" className="link">Terms</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Refunds</a>
+                      <a href="#" className="link">Refunds</a>
                     </li>
                     <li>
-                      <a href="#" class="link">Cookies</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fourth">
-                  <p class="header">Company</p>
-                  <ul class="list">
-                    <li>
-                      <a href="#" class="link">Order customs</a>
-                    </li>
-                    <li>
-                      <a href="#" class="link">About</a>
-                    </li>
-                    <li>
-                      <a href="#" class="link">Contacts</a>
-                    </li>
-                    <li>
-                      <a href="#" class="link">Help</a>
+                      <a href="#" className="link">Cookies</a>
                     </li>
                   </ul>
                 </div>
-                <div class="fifth">
-                  <div class="left">
-                    <p class="bottom-text">Created on sunshine coast by Craftwork © 2020</p>
+                <div className="fourth">
+                  <p className="header">Company</p>
+                  <ul className="list">
+                    <li>
+                      <a href="#" className="link">Order customs</a>
+                    </li>
+                    <li>
+                      <a href="#" className="link">About</a>
+                    </li>
+                    <li>
+                      <a href="#" className="link">Contacts</a>
+                    </li>
+                    <li>
+                      <a href="#" className="link">Help</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="fifth">
+                  <div className="left">
+                    <p className="bottom-text">Created on sunshine coast by Craftwork © 2020</p>
                   </div>
-                  <div class="right">
-                    <ul class="socials">
+                  <div className="right">
+                    <ul className="socials">
                       <li>
-                        <a href="#" class="bottom-text bottom-link">Dribbble</a>
+                        <a href="#" className="bottom-text bottom-link">Dribbble</a>
                       </li>
                       <li>
-                        <a href="#" class="bottom-text bottom-link">Twitter</a>
+                        <a href="#" className="bottom-text bottom-link">Twitter</a>
                       </li>
                       <li>
-                        <a href="#" class="bottom-text bottom-link">Instagram</a>
+                        <a href="#" className="bottom-text bottom-link">Instagram</a>
                       </li>
                     </ul>
                   </div>
